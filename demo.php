@@ -5,7 +5,7 @@
 		<?php
 		    include 'rest.php';
 			
-			$restServer = "192.168.2.2:9080";
+			$restServer = "121.41.102.126:8080";
 			$accessKey = "demo_access";
             $secretKey = "demo_secret";
 			
