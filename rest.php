@@ -155,8 +155,9 @@
 			return $Signature;
 		}
 		
+		
 		private function auth(){
-				  $urlStr = "http://".$this->restServer."/rtc/auth/valid?callback=test&access_key=".$this->accessKey."&digest=" . $this->signature;
+				  $urlStr = "http://".$this->restServer."/rtc/auth/valid?access_key=".$this->accessKey."&digest=" . $this->signature;
 				  $re = $this->sockGet($urlStr);
 				  if(!is_null($re)  && $re != "" ){
 			              $json = json_decode($re);
